@@ -1,2 +1,2 @@
-# HNG-TRACK-B-PROFILE-CARD
+# HNG-TRACK-1B-PROFILE-CARD
 a responsive profile card containing all vital contact information 
