@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+<article class="profile-card" data-testid="test-profile-card">
+
+  <div class="top">
+    <img 
+      src="./images/profile-avatar.jpeg"
+      alt=""
+      class="avatar"
+      data-testid="test-user-avatar"
+    />
+
+    <h2 class="name" data-testid="test-user-name">
+      Tuwatimi Emmanuel
+    </h2>
+  </div>
+
+  <div class="details">
+
+    <p class="bio" data-testid="test-user-bio">
+      frontend developer focused on building clean, interactive, and user-friendly interfaces.
+    </p>
+
+    <p class="time" id="time" data-testid="test-user-time">
+      loading time...
+    </p>
+
+    <nav class="socials" data-testid="test-user-social-links">
+      <a href="https://twitter.com/Rio__Crypto" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-twitter">twitter</a>
+
+      <a href="https://github.com/Rioemmy" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-github">github</a>
+
+      <a href="https://www.linkedin.com/in/tuwatimi-emmanuel-693369211?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-linkedin">linkedin</a>
+    </nav>
+
+    <div class="lists">
+
+      <section>
+        <h3>hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>coding</li>
+          <li>reading</li>
+          <li>music</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>bugs</li>
+          <li>slow internet</li>
+          <li>poor ui</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </div>
+
+</article>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
