@@ -9,28 +9,28 @@
 
 </head>
 
-<body> 
+<body>
 
   <article class="profile-card" data-testid="test-profile-card">
 
-    <div class="top">
+    <section class="top">
 
-      <img class="profile-wallpaper" src="./images/wallpaper.jpg" alt="">
+      <img class="profile-wallpaper" src="./images/wallpaper.jpg" alt="profile image">
 
-      <div class="profile-img-container">
+      <figure class="profile-img-container">
         <img class="avatar" src="./images/profile-avatar.jpeg" alt="" data-testid="test-user-avatar" />
-      </div>
+      </figure>
 
-    </div>
+    </section>
 
-    <div class="details-section">
+    <section class="details-section">
 
-      <div class="name-container">
-        <h3 class="name" data-testid="test-user-name">
+      <section class="name-container">
+        <header class="name" data-testid="test-user-name">
           Tuwatimi Emmanuel
-        </h3>
+        </header>
         <img class="verified-icon" src="./images/verified-icon.svg" alt="">
-      </div>
+      </section>
 
       <p class="bio  first-paragraph" data-testid="test-user-bio">
         i’m a frontend dev focused on building user friendly web apps, turning
@@ -40,12 +40,12 @@
         team player, clear communicator, and collaborative.
       </p>
 
-      <div class="time-container">
+      <section class="time-container">
         <img class="time-icon" src="./images/clock-icon.svg" alt="">
         <p class="time" id="time" data-testid="test-user-time">
           loading time...
         </p>
-      </div>
+      </section>
 
       <nav data-testid="test-user-social-links">
 
@@ -66,7 +66,8 @@
 
       </nav>
 
-      <div class="lists">
+  
+      <section class="list-container">
 
         <section>
           <h4 class="list-details-heading">Hobbies</h4>
@@ -92,9 +93,11 @@
           </ul>
         </section>
 
-      </div>
+      </section>
 
-    </div>
+    
+
+    </section>
 
   </article>
 

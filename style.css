@@ -2,13 +2,17 @@
 /* universal styling */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'poppins', sans-serif;
   background-color: #364a7a;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(-45deg, #eeeb52b7, #6308976e, #d59d23, #6308976e);
+}
+
+html{
+  font-size: 62.5%;
 }
 
 /* general styling */
@@ -19,35 +23,35 @@ a {
 /* the profile card container styling */
 .profile-card {
   background-color: rgba(255, 255, 255, 0.938);
-  border-radius: 12px;
-  width: 70%;
+  border-radius: 1.2rem;
+  width: 80%;
   max-width: 600px;
-  gap: 10px;
+  gap: 1rem;
 }
 
 /* profile container styling */
 .top {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 6.5rem;
 }
 
 .profile-wallpaper {
   width: 100%;
-  height: 130px;
+  height: 10rem;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .profile-img-container {
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 1.5%;
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
   border: rgba(255, 255, 255, 0.938) solid 5px;
@@ -57,18 +61,18 @@ a {
 /*----- the details container----- */
 
 .details-section {
-  padding: 20px;
+  padding: 1rem;
 }
 
   /* name and verified-icon container */
   .name-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
   }
 
   .verified-icon {
-    width: 20px;
+    width: 2rem;
   }
 
   .name {
@@ -81,38 +85,37 @@ a {
   }
 
   .first-paragraph {
-    margin-bottom: 8px;
-    margin-top: 10px;
+    margin-bottom: 0.8rem
   }
 
   .second-paragraph {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
   }
 
   /* time container  */
   .time-container {
     display: flex;
     gap: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 0;
   }
 
   .time {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #525357cb;
   }
 
   .time-icon {
-    width: 20px;
+    width: 2rem;
   }
 
   /* socials link container */
   .social-icon {
-    width: 30px;
+    width: 2.5rem;
     transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
-    border-radius: 15px;
+    border-radius: 1.5rem;
   }
 
   .social-icon:hover {
@@ -121,27 +124,44 @@ a {
   }
 
   /* hobbies and dislike lists container  */
+  .list-container{
+    display: flex;
+    gap: 1rem;
+  }
+
   .list-details-heading {
-    margin-top: 9px;
-    margin-bottom: 5px;
+    margin-top: 0.9rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
   }
 
   li {
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
     font-weight: 100;
-  }
-
-  .lists {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-
-  .lists ul {
     list-style: none;
+  }
+
+  
+  .list-container ul {
     padding: 0;
     margin: 0;
+  }
+
+  /* make responsive across different screen sizes*/
+  @media (min-width: 600px) {
+    html {
+      font-size: 70%;
+    }
+
+    .profile-card {
+      width: 70%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    html {
+      font-size: 80%;
+    }
   }
 
