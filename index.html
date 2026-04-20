@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Card</title>
   <link rel="stylesheet" href="./style.css">
 
-
 </head>
 
-<body>
+<body> 
 
-<article class="profile-card" data-testid="test-profile-card">
+  <article class="profile-card" data-testid="test-profile-card">
 
-  <div class="top">
-    <img 
-      src="./images/profile-avatar.jpeg"
-      alt=""
-      class="avatar"
-      data-testid="test-user-avatar"
-    />
+    <div class="top">
 
-    <h2 class="name" data-testid="test-user-name">
-      Tuwatimi Emmanuel
-    </h2>
-  </div>
+      <img class="profile-wallpaper" src="./images/wallpaper.jpg" alt="">
 
-  <div class="details">
-
-    <p class="bio" data-testid="test-user-bio">
-      frontend developer focused on building clean, interactive, and user-friendly interfaces.
-    </p>
-
-    <p class="time" id="time" data-testid="test-user-time">
-      loading time...
-    </p>
-
-    <nav class="socials" data-testid="test-user-social-links">
-      <a href="https://twitter.com/Rio__Crypto" target="_blank" rel="noopener noreferrer"
-         data-testid="test-user-social-twitter">twitter</a>
-
-      <a href="https://github.com/Rioemmy" target="_blank" rel="noopener noreferrer"
-         data-testid="test-user-social-github">github</a>
-
-      <a href="https://www.linkedin.com/in/tuwatimi-emmanuel-693369211?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"
-         data-testid="test-user-social-linkedin">linkedin</a>
-    </nav>
-
-    <div class="lists">
-
-      <section>
-        <h3>hobbies</h3>
-        <ul data-testid="test-user-hobbies">
-          <li>coding</li>
-          <li>reading</li>
-          <li>music</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>dislikes</h3>
-        <ul data-testid="test-user-dislikes">
-          <li>bugs</li>
-          <li>slow internet</li>
-          <li>poor ui</li>
-        </ul>
-      </section>
+      <div class="profile-img-container">
+        <img class="avatar" src="./images/profile-avatar.jpeg" alt="" data-testid="test-user-avatar" />
+      </div>
 
     </div>
 
-  </div>
+    <div class="details-section">
 
-</article>
+      <div class="name-container">
+        <h3 class="name" data-testid="test-user-name">
+          Tuwatimi Emmanuel
+        </h3>
+        <img class="verified-icon" src="./images/verified-icon.svg" alt="">
+      </div>
 
-<script src="./script.js"></script>
+      <p class="bio  first-paragraph" data-testid="test-user-bio">
+        i’m a frontend dev focused on building user friendly web apps, turning
+        ideas into smooth experiences.
+      </p>
+      <p class="bio second-paragraph" data-testid="test-user-bio">
+        team player, clear communicator, and collaborative.
+      </p>
+
+      <div class="time-container">
+        <img class="time-icon" src="./images/clock-icon.svg" alt="">
+        <p class="time" id="time" data-testid="test-user-time">
+          loading time...
+        </p>
+      </div>
+
+      <nav data-testid="test-user-social-links">
+
+        <a href="https://twitter.com/Rio__Crypto" target="_blank" rel="noopener noreferrer"
+          data-testid="test-user-social-twitter">
+          <img class="social-icon" src="./images/x-icon.svg" alt="">
+        </a>
+
+        <a href="https://github.com/Rioemmy" target="_blank" rel="noopener noreferrer"
+          data-testid="test-user-social-github">
+          <img class="social-icon" src="./images/github-icon.svg" alt="">
+        </a>
+
+        <a href="https://www.linkedin.com/in/tuwatimi-emmanuel-693369211" target="_blank" rel="noopener noreferrer"
+          data-testid="test-user-social-linkedin">
+          <img class="social-icon" src="./images/linkedin-icon.svg" alt="">
+        </a>
+
+      </nav>
+
+      <div class="lists">
+
+        <section>
+          <h4 class="list-details-heading">Hobbies</h4>
+          <ul data-testid="test-user-hobbies">
+
+            <li>music</li>
+            <li>coding</li>
+            <li>video games</li>
+            <li>seeing movies</li>
+
+          </ul>
+        </section>
+
+        <section>
+          <h4 class="list-details-heading">Dislikes</h4>
+          <ul data-testid="test-user-dislikes">
+
+            <li>bugs</li>
+            <li>poor ui/ux</li>
+            <li>unstructured code</li>
+            <li>less communication</li>
+
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  <script type="module" src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 
 </body>
+
 </html>
